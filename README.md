@@ -103,4 +103,5 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## ✨ Autor
 
-Henrique Alves - [GitHub](https://github.com/henrique013)
+- LinkedIn: [Henrique Alves](https://www.linkedin.com/in/henrique-alves-a44b99135)
+- GitHub: [henrique013](https://github.com/henrique013)
