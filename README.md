@@ -57,6 +57,16 @@ cd dev
 ./down.sh
 ```
 
+### Criar uma nova tag
+
+Para criar e enviar uma nova tag para o repositório remoto:
+
+```bash
+./tag.sh v1.0.0
+```
+
+Substitua `v1.0.0` pela versão desejada seguindo o padrão [SemVer](https://semver.org/).
+
 ## ⚙️ Configurações do Redis
 
 O Redis está configurado com as seguintes otimizações:
