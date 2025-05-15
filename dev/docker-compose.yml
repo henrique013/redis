@@ -3,6 +3,7 @@ services:
     build:
       context: ../
       dockerfile: ./Dockerfile
+    container_name: redis
     environment:
       - REDIS_PASS=${REDIS_PASS}
     ports:
