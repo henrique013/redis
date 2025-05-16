@@ -91,7 +91,7 @@ O Redis está configurado com as seguintes otimizações:
 
 - O Redis é configurado com autenticação por senha
 - A senha é definida através da variável de ambiente `REDIS_PASS`
-- A porta **pública** padrão (6379) pode ser alterada através da variável `REDIS_PORT`
+- A porta **pública** padrão (6379) pode ser alterada através da variável `PUBLIC_PORT`
 
 ## 📦 Estrutura do Projeto
 
