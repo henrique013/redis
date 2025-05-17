@@ -28,13 +28,7 @@ cd redis
 ```bash
 cd dev
 cp .env.example .env
-```
-
-3. Edite o arquivo `.env` com suas configurações:
-
-```env
-REDIS_PASS=sua_senha_aqui
-REDIS_PORT=6379
+cp .redis.env.example .redis.env
 ```
 
 ## 🚀 Executando o projeto
@@ -62,10 +56,10 @@ cd dev
 Para criar e enviar uma nova tag para o repositório remoto:
 
 ```bash
-./tag.sh v1.0.0
+./tag.sh 1.0.0
 ```
 
-Substitua `v1.0.0` pela versão desejada seguindo o padrão [SemVer](https://semver.org/).
+Substitua `1.0.0` pela versão desejada seguindo o padrão [SemVer](https://semver.org/).
 
 ## ⚙️ Configurações do Redis
 
@@ -99,7 +93,8 @@ O Redis está configurado com as seguintes otimizações:
 .
 ├── dev/                   # Ambiente de desenvolvimento
 │   ├── docker-compose.yml # Docker Compose de desenvolvimento
-│   ├── .env.example       # Exemplo de configuração
+│   ├── .env.example       # Exemplo de variáveis de ambiente usadas pelo Docker Compose
+│   ├── .redis.env.example # Exemplo de variáveis de ambiente usadas pela imagem do Redis
 │   ├── up.sh              # Script para iniciar o ambiente
 │   └── down.sh            # Script para parar o ambiente
 ├── src/                   # Código fonte e configurações

@@ -4,8 +4,8 @@ services:
       context: ../
       dockerfile: ./Dockerfile
     container_name: redis
-    environment:
-      - REDIS_PASS=${REDIS_PASS}
+    env_file:
+      - .redis.env
     volumes:
       - redis_data:/data
     ports:
