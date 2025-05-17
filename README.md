@@ -92,14 +92,16 @@ O Redis está configurado com as seguintes otimizações:
 ```
 .
 ├── dev/                   # Ambiente de desenvolvimento
-│   ├── docker-compose.yml # Docker Compose de desenvolvimento
 │   ├── .env.example       # Exemplo de variáveis de ambiente usadas pelo Docker Compose
 │   ├── .redis.env.example # Exemplo de variáveis de ambiente usadas pela imagem do Redis
-│   ├── up.sh              # Script para iniciar o ambiente
-│   └── down.sh            # Script para parar o ambiente
+│   ├── docker-compose.yml # Docker Compose de desenvolvimento
+│   ├── up.sh              # Script para iniciar o container
+│   ├── down.sh            # Script para parar o container
+│   └── tag.sh             # Script para gerar tag do container
 ├── src/                   # Código fonte e configurações
+│   ├── entrypoint.sh      # Script de startup do container
 │   └── redis.conf         # Configuração do Redis
-└── Dockerfile             # Configuração do container
+└── Dockerfile             # Configuração da imagem do Redis
 ```
 
 ## 📝 Licença
