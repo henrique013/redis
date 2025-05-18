@@ -3,7 +3,6 @@ services:
     build:
       context: ../
       dockerfile: ./Dockerfile
-    container_name: redis
     env_file:
       - .redis.env
     volumes:
